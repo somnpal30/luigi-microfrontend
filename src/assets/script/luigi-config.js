@@ -172,13 +172,9 @@ settings = () => {
 
 profile = () => {
     return {
-        logout: {
-            customLogoutFn: logoff
-        },
+        logout: {customLogoutFn: logoff},
         items: [
-            {
-                label: 'Change Profile'
-            }
+            {label: 'Change Profile'}
         ]
     }
 }
