@@ -87,10 +87,12 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "luigi-demo-portal:build:production"
+              "browserTarget": "luigi-demo-portal:build:production",
+              "port": 5000
             },
             "development": {
-              "browserTarget": "luigi-demo-portal:build:development"
+              "browserTarget": "luigi-demo-portal:build:development",
+              "port": 5000
             }
           },
           "defaultConfiguration": "development"
