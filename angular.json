@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "dfs-demo-portal": {
+    "luigi-demo-portal": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/dfs-demo-portal",
+            "outputPath": "dist/luigi-demo-portal",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -87,10 +87,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "dfs-demo-portal:build:production"
+              "browserTarget": "luigi-demo-portal:build:production"
             },
             "development": {
-              "browserTarget": "dfs-demo-portal:build:development"
+              "browserTarget": "luigi-demo-portal:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -98,7 +98,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "dfs-demo-portal:build"
+            "browserTarget": "luigi-demo-portal:build"
           }
         },
         "test": {
@@ -121,5 +121,5 @@
       }
     }
   },
-  "defaultProject": "dfs-demo-portal"
+  "defaultProject": "luigi-demo-portal"
 }

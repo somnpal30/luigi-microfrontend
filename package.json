@@ -1,10 +1,10 @@
 {
-  "name": "dfs-demo-portal",
+  "name": "luigi-demo-portal",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "dfs-portal-start": "ng serve",
-    "dfs-portal-build": "ng build",
+    "luigi-portal-start": "ng serve",
+    "luigi-portal-build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

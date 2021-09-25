@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 declare var Luigi: any;
 declare var loadLuigi: any;
-declare var loadLuigiPostLogin: any;
+//declare var loadLuigiPostLogin: any;
 @Component({
   selector: 'app-luigi',
   templateUrl: './luigi.component.html',
@@ -13,8 +13,8 @@ export class LuigiComponent implements OnInit {
 
   ngOnInit(): void {
     console.log('loading luigi...')
-    //loadLuigi();
-    loadLuigiPostLogin();
+    loadLuigi();
+    //loadLuigiPostLogin();
   }
 
 }
