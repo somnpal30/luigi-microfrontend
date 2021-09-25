@@ -163,7 +163,7 @@ settings = () => {
     return {
         header: {title: 'Packaging Framework'},
         hideNavigation: false,
-        sideNavFooterText: 'Red Board© 2021-22',
+        sideNavFooterText: 'Demo Project© 2021-22',
         sideNavCompactMode: false,
         responsiveNavigation: 'semiCollapsible',
         profileType: 'Fiori3',
