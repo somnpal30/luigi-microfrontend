@@ -8,7 +8,8 @@ const routes: Routes = [
   {path: '', redirectTo: '/digital-portal', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
   {path: 'digital-portal', component: LuigiComponent},
-  {path: 'secure/dashboard', component: OverviewComponent}
+  {path: 'secure/dashboard', component: OverviewComponent} ,
+  { path: '**', redirectTo: 'digital-portal'}
 ];
 
 @NgModule({
