@@ -88,7 +88,6 @@
           "configurations": {
             "production": {
               "browserTarget": "luigi-demo-portal:build:production",
-              "port": 5000
             },
             "development": {
               "browserTarget": "luigi-demo-portal:build:development",
