@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "luigi-portal-start": "ng serve",
-    "build": "ng build --base-href /luigi-demo-portal",
+    "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
