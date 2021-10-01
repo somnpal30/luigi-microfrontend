@@ -29,7 +29,6 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "_redirects",
               {
                 "glob": "**",
                 "input": "node_modules/@luigi-project/core",
@@ -39,6 +38,11 @@
                 "glob": "luigi-client.js",
                 "input": "node_modules/@luigi-project/client",
                 "output": "/luigi-client"
+              },
+              {
+                "glob": "_redirects",
+                "input": "src",
+                "output": "/"
               }
             ],
             "styles": [
@@ -61,8 +65,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "200kb",
-                  "maximumError": "400kb"
+                  "maximumWarning": "600kb",
+                  "maximumError": "1mb"
                 }
               ],
               "fileReplacements": [
