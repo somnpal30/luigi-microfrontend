@@ -40,6 +40,11 @@
                 "output": "/luigi-client"
               },
               {
+                "glob": "jquery.js",
+                "input": "node_modules/jquery/dist",
+                "output": "/jquery"
+              },
+              {
                 "glob": "_redirects",
                 "input": "src",
                 "output": "/"
@@ -92,7 +97,7 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "luigi-demo-portal:build:production",
+              "browserTarget": "luigi-demo-portal:build:production"
             },
             "development": {
               "browserTarget": "luigi-demo-portal:build:development",

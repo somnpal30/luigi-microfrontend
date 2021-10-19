@@ -6,13 +6,14 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './views/login/login.component';
 import { LuigiComponent } from './views/luigi/luigi.component';
 import { OverviewComponent } from './views/protected/overview/overview.component';
+import {AutocompleteOffDirective} from "./utils/autocomplete-off.directive";
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     LuigiComponent,
-    OverviewComponent
+    OverviewComponent,AutocompleteOffDirective
   ],
   imports: [
     BrowserModule,

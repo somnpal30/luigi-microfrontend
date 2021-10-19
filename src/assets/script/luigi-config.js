@@ -37,9 +37,20 @@ loadLuigi = () => {
 
 
 loadLuigiPostLogin = () => {
-    console.log('post login processing...')
+    //console.log('post login processing...')
     Luigi.setConfig(luigiConfigPostLogin())
+    //console.log(Luigi.getConfig().navigation.nodes[0]);
+}
 
+poller = () => {
+    var sleep = time => new Promise(resolve => setTimeout(resolve, time));
+    var poll = (promiseFn, time) => promiseFn().then(
+        sleep(time).then(() => poll(promiseFn, time)))
+
+    poll(() => new Promise(() => {
+        console.log(Luigi.getConfig().navigation.nodes.length);
+
+    }), 5000)
 }
 
 luigiConfigPostLogin = () => {
