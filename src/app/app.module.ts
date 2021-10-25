@@ -7,6 +7,7 @@ import { LoginComponent } from './views/login/login.component';
 import { LuigiComponent } from './views/luigi/luigi.component';
 import { OverviewComponent } from './views/protected/overview/overview.component';
 import {AutocompleteOffDirective} from "./utils/autocomplete-off.directive";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -15,10 +16,11 @@ import {AutocompleteOffDirective} from "./utils/autocomplete-off.directive";
     LuigiComponent,
     OverviewComponent,AutocompleteOffDirective
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

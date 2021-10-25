@@ -1,4 +1,5 @@
 loadLuigi = () => {
+    clearStorage();
     Luigi.setConfig({
         navigation: {
             nodes: [
@@ -21,8 +22,8 @@ loadLuigi = () => {
         communication: {
             customMessagesListeners: {
                 overview: () => {
-
-                    loadLuigiPostLogin();
+                   sessionStorage.setItem("key", "Hotiti-Navigation");
+                   loadLuigiPostLogin();
                 }
             }
         },
@@ -72,11 +73,14 @@ luigiConfigPostLogin = () => {
 
 
 logoff = () => {
+    clearStorage();
     loadLuigi();
     //Luigi.navigation().navigate('/overview/signin')
     //Luigi.navigation().openAsModal('/overview/signin', {title:'Users'});
 }
-
+clearStorage = () => {
+    sessionStorage.removeItem("key");
+}
 
 nodes = () => {
     return [

@@ -21,6 +21,7 @@
     "@luigi-project/client": "^1.16.1",
     "@luigi-project/core": "^1.16.1",
     "bootstrap": "^5.1.1",
+    "bootstrap-icons": "^1.6.1",
     "jquery": "^3.6.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",

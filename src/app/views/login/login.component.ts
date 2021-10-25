@@ -11,7 +11,8 @@ export class LoginComponent implements OnInit {
     show: boolean = true;
     identifier: string = '';
     secret: string = '';
-
+    showError: boolean = false;
+    errorMessage:string = "Invalid Credential"
     constructor() {
     }
 
@@ -20,7 +21,12 @@ export class LoginComponent implements OnInit {
     }
 
     login = () => {
-        LuigiClient.sendCustomMessage({id: 'overview'});
+        if (this.identifier === 'steve.roger' && this.secret === 'confidential') {
+            LuigiClient.sendCustomMessage({id: 'overview'});
+        } else {
+            this.showError = true;
+        }
+
     }
 
     showPassword = () => {
